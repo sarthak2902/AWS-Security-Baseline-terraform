@@ -1,0 +1,24 @@
+# Terraform state: contains resource details, never commit
+*.tfstate
+*.tfstate.*
+
+# Terraform working directory and saved plans
+.terraform/
+*.tfplan
+crash.log
+
+# Variable files that may hold secrets
+*.tfvars
+!example.tfvars
+
+# Credentials and keys
+.env
+*.key
+*.pem
+.aws/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
